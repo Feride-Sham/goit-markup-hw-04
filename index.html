@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- Шапка с навигацией-->
+    <header>
+      <!--навигация по сайту-->
+      <div class="container main-nav">
+        <nav class="navigation main-nav">
+          <a class="logo" href="./">
+            <span class="logo-web">Web</span> Studio
+          </a>
+
+          <ul class="list site-nav">
+            <li class="item"><a href="" class="nav-link current">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="nav-link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!--контакты для связи-->
+
+        <ul class="list nav-contacts">
+          <li class="item">
+            <a href="mailto:info@devstudio.com " class="contacts">
+              <img src="./image/mail.svg" alt="Конверт" />
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111 " class="contacts">
+              <img src="./image/smartphone.svg" alt="Телефон" />
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Герой-->
+      <section class="hero">
+        <div class="container">
+          <h1 class="main-title">Эффективные решения </br> для вашего бизнеса</h1>
+          <a href="#" class="button">Заказать услугу</a>
+        </div>
+      </section>
+
+      <!-- Преимущества Студии-->
+      <section class="advantages">
+        <div class="container">
+          <!-- заголовок скрыть в css-->
+          <h2 class="invisible-title">Преимущества Студии</h2>
+
+          <ul class="feature-list list">
+            <li class="item">
+              <img class="advantages-img" src="./image/antenna.svg" alt="" />
+              <h3>Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="item">
+              <img class="advantages-img" src="./image/clock.svg" alt="" />
+              <h3>Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="item">
+              <img class="advantages-img" src="./image/diagram.svg" alt="" />
+              <h3>Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="item">
+              <img class="advantages-img" src="./image/astronaut.svg" alt="" />
+              <h3>Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Чем мы занимаемся-->
+      <section class="examples sections">
+        <div class="container">
+          <h2>Чем мы занимаемся</h2>
+
+          <ul class="example-list list">
+            <li class="example-item">
+              <img src="./image/box1.jpg" alt="Ноутбук" width="370" />
+              <h3>Десктопные приложения</h3>
+            </li>
+            <li class="example-item">
+              <img src="./image/box2.jpg" alt="Мобильный телефон" width="370" />
+              <h3>Мобильные приложения</h3>
+            </li>
+            <li class="example-item">
+              <img src="./image/box3.jpg" alt="Монитор" width="370" />
+              <h3>Дизайнерские решения</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Наша команда-->
+      <section class="staff sections">
+        <div class="container">
+          <h2>Наша команда</h2>
+
+          <ul class="staff-list list">
+            <!--Сотрудник 1-->
+            <li class="item">
+              <img
+                class="staff-img"
+                src="./image/photo1.jpg"
+                alt="Сотрудник 1"
+                width="270"
+              />
+              <h3>Николай Кучеренко</h3>
+              <p>Product Designer</p>
+
+              <ul class="networks list">
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Твиттер">Twit</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Фейсбук">FB</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--Сотрудник 2-->
+            <li class="item">
+              <img
+                class="staff-img"
+                src="./image/photo2.jpg"
+                alt="Сотрудник 2"
+                width="270"
+              />
+              <h3>Ольга Иванова</h3>
+              <p>Frontend Developer</p>
+
+              <ul class="networks list">
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Твиттер">Twit</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Фейсбук">FB</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--Сотрудник 3-->
+            <li class="item">
+              <img
+                class="staff-img"
+                src="./image/photo3.jpg"
+                alt="Сотрудник 3"
+                width="270"
+              />
+              <h3>Андрей Шевченко</h3>
+              <p>Marketing</p>
+
+              <ul class="networks list">
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Твиттер">Twit</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Фейсбук">FB</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--Сотрудник 4-->
+            <li class="item">
+              <img
+                class="staff-img"
+                src="./image/photo4.jpg"
+                alt="Сотрудник 4"
+                width="270"
+              />
+              <h3>Иван Николаев</h3>
+              <p>UI Designer</p>
+
+              <ul class="networks list">
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Твиттер">Twit</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Фейсбук">FB</a>
+                </li>
+                <li class="icon">
+                  <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Постоянные клиенты-->
+      <section class="sections">
+        <div class="container">
+          <h2 class="customer-title">Постоянные клиенты</h2>
+
+          <ul class="list customer">
+            <li class="item">
+              <a href=""><img src="./image/logo1.svg" alt="Логотип" /></a>
+            </li>
+            <li class="item">
+              <a href=""><img src="./image/logo2.svg" alt="Логотип" /></a>
+            </li>
+            <li class="item">
+              <a href=""><img src="./image/logo3.svg" alt="Логотип" /></a>
+            </li>
+            <li class="item">
+              <a href=""><img src="./image/logo4.svg" alt="Логотип" /></a>
+            </li>
+            <li class="item">
+              <a href=""><img src="./image/logo5.svg" alt="Логотип" /></a>
+            </li>
+            <li class="item">
+              <a href=""><img src="./image/logo6.svg" alt="Логотип" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="navigation footer-box">
+          <a href="./" class="logo">
+            <span class="logo-web">Web</span> Studio
+          </a>
+          <address>
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+
+            <ul class="list">
+              <li>
+                <a href="mailto:info@devstudio.com " class="footer-contacts"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111 " class="footer-contacts"
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-box">
+          <b>Присоединяйтесь</b>
+          <ul class="networks list">
+            <li class="icon">
+              <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
+            </li>
+            <li class="icon">
+              <a href="" aria-label="Ссылка на Твиттер">Twit</a>
+            </li>
+            <li class="icon">
+              <a href="" aria-label="Ссылка на Фейсбук">FB</a>
+            </li>
+            <li class="icon">
+              <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-box sign-form">
+          <b>Подпишитесь на рассылку</b>
+          <a href="#" class="button">Подписаться</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
