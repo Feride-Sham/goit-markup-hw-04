@@ -120,6 +120,29 @@ h3 {
   margin-left: 30px;
 }
 
+.nav-contacts .item-mail::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  background-image: url(../image/mail.svg);
+  background-size: auto;
+  background-position: center top;
+}
+
+.nav-contacts .item-phone::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 15px;
+
+  margin-right: 10px;
+  background-image: url(../image/smartphone.svg);
+  background-size: auto;
+  background-position: center top;
+}
+
 .contacts {
   color: var(--main-text-color);
   text-decoration: none;
@@ -127,6 +150,7 @@ h3 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
 }
 
 .contacts:hover,
@@ -172,9 +196,9 @@ h3 {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 30px;
   min-width: 200px;
 
   color: var(--title-text-color);
@@ -222,8 +246,32 @@ h3 {
   margin-right: 0px;
 }
 
-.advantages-img {
+.feature-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
   margin-bottom: 30px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.item-antenna::before {
+  background-image: url(../image/antenna.svg);
+}
+
+.item-clock::before {
+  background-image: url(../image/clock.svg);
+}
+
+.item-diagram::before {
+  background-image: url(../image/diagram.svg);
+}
+
+.item-astronaut::before {
+  background-image: url(../image/astronaut.svg);
 }
 
 .advantages h3 {
@@ -317,6 +365,8 @@ h3 {
   margin-right: 30px;
   padding-bottom: 24px;
   background-color: var(--title-text-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .staff-list .item:nth-child(4n) {
@@ -359,6 +409,32 @@ h3 {
 
 .icon:not(:last-child) {
   margin-right: 10px;
+}
+
+.icon-netw::before {
+  display: inline-flex;
+  content: "";
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.icon-inst::before {
+  background-image: url(../image/instagram.svg);
+}
+
+.icon-twit::before {
+  background-image: url(../image/twitter.svg);
+}
+
+.icon-fb::before {
+  background-image: url(../image/facebook.svg);
+}
+
+.icon-link::before {
+  background-image: url(../image/linkedin.svg);
 }
 
 .icon a {
@@ -479,9 +555,25 @@ h3 {
   justify-content: start;
 }
 
-.footer .icon a {
-  color: var(--title-text-color);
-  text-decoration: none;
+.footer .icon-netw::before {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer .icon-inst::before {
+  background-image: url(../image/instwhite.svg);
+}
+
+.footer .icon-twit::before {
+  background-image: url(../image/twitwhite.svg);
+}
+
+.footer .icon-fb::before {
+  background-image: url(../image/fbwhite.svg);
+}
+
+.footer .icon-link::before {
+  background-image: url(../image/linkedinwhite.svg);
 }
 
 .footer .icon a:hover,
@@ -498,6 +590,15 @@ h3 {
 .sign-form {
   width: 570px;
   margin-right: 0px;
+}
+
+.sign-form .button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../image/icon.svg);
+  background-size: contain;
 }
 
 /* -----------------------стилизация страницы Портфолио------------------------------ */
@@ -580,6 +681,8 @@ h3 {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .card-title {
