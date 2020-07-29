@@ -246,7 +246,7 @@ h3 {
   margin-right: 0px;
 }
 
-.feature-list .item::before {
+.feature-list .item {
   display: block;
   content: "";
   height: 120px;
@@ -258,19 +258,19 @@ h3 {
   border-radius: 4px;
 }
 
-.item-antenna::before {
+.item-antenna {
   background-image: url(../image/antenna.svg);
 }
 
-.item-clock::before {
+.item-clock {
   background-image: url(../image/clock.svg);
 }
 
-.item-diagram::before {
+.item-diagram {
   background-image: url(../image/diagram.svg);
 }
 
-.item-astronaut::before {
+.item-astronaut {
   background-image: url(../image/astronaut.svg);
 }
 
@@ -411,7 +411,7 @@ h3 {
   margin-right: 10px;
 }
 
-.icon-netw::before {
+.icon-netw {
   display: inline-flex;
   content: "";
   width: 44px;
@@ -419,36 +419,28 @@ h3 {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  border-radius: 50%;
 }
 
-.icon-inst::before {
+.icon-inst {
   background-image: url(../image/instagram.svg);
 }
 
-.icon-twit::before {
+.icon-twit {
   background-image: url(../image/twitter.svg);
 }
 
-.icon-fb::before {
+.icon-fb {
   background-image: url(../image/facebook.svg);
 }
 
-.icon-link::before {
+.icon-link {
   background-image: url(../image/linkedin.svg);
 }
 
-.icon a {
-  display: block;
-  width: 44px;
-  height: 44px;
-
-  color: var(--main-text-color);
-  text-decoration: none;
-}
-
-.icon a:hover,
-.icon a:focus {
-  color: var(--accent-color);
+.icon-netw:hover,
+.icon-netw:focus {
+  background-color: var(--accent-color);
 }
 
 /* ----------стилизация блока Постоянные клиенты---------- */
@@ -555,30 +547,30 @@ h3 {
   justify-content: start;
 }
 
-.footer .icon-netw::before {
+.footer .icon-netw {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
-.footer .icon-inst::before {
+.footer .icon-inst {
   background-image: url(../image/instwhite.svg);
 }
 
-.footer .icon-twit::before {
+.footer .icon-twit {
   background-image: url(../image/twitwhite.svg);
 }
 
-.footer .icon-fb::before {
+.footer .icon-fb {
   background-image: url(../image/fbwhite.svg);
 }
 
-.footer .icon-link::before {
+.footer .icon-link {
   background-image: url(../image/linkedinwhite.svg);
 }
 
-.footer .icon a:hover,
-.footer .icon a:focus {
-  color: var(--accent-color);
+.footer .icon-netw:hover,
+.footer .icon-netw:focus {
+  background-color: var(--accent-color);
 }
 
 .footer-box {
