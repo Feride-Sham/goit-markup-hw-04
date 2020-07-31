@@ -120,29 +120,6 @@ h3 {
   margin-left: 30px;
 }
 
-.nav-contacts .item-mail::before {
-  content: "";
-  display: inline-flex;
-  width: 16px;
-  height: 11.2px;
-  margin-right: 10px;
-  background-image: url(../image/mail.svg);
-  background-size: auto;
-  background-position: center top;
-}
-
-.nav-contacts .item-phone::before {
-  content: "";
-  display: inline-flex;
-  width: 10px;
-  height: 15px;
-
-  margin-right: 10px;
-  background-image: url(../image/smartphone.svg);
-  background-size: auto;
-  background-position: center top;
-}
-
 .contacts {
   color: var(--main-text-color);
   text-decoration: none;
@@ -157,6 +134,38 @@ h3 {
 .contacts:focus {
   color: var(--accent-color);
 }
+
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* тренировка background image */
+/* .icon-mail:hover {
+  fill: var(--accent-color);
+} */
+/* .nav-contacts .item-mail::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  background-image: url(../image/mail.svg);
+  background-size: auto;
+  background-position: center top;
+} */
+
+/* .nav-contacts .item-phone::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 15px;
+
+  margin-right: 10px;
+  background-image: url(../image/smartphone.svg);
+  background-size: auto;
+  background-position: center top;
+} */
 
 /* ------------стилизация Героя------------ */
 .hero {
@@ -246,32 +255,12 @@ h3 {
   margin-right: 0px;
 }
 
-.feature-list .item::before {
-  display: block;
-  content: "";
-  height: 120px;
+.feature-item {
+  width: 270px;
+  padding: 25px 100px;
   margin-bottom: 30px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.item-antenna::before {
-  background-image: url(../image/antenna.svg);
-}
-
-.item-clock::before {
-  background-image: url(../image/clock.svg);
-}
-
-.item-diagram::before {
-  background-image: url(../image/diagram.svg);
-}
-
-.item-astronaut::before {
-  background-image: url(../image/astronaut.svg);
 }
 
 .advantages h3 {
@@ -412,30 +401,25 @@ h3 {
 }
 
 .icon-netw {
-  display: inline-flex;
-  content: "";
+  display: flex;
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 }
-
-.icon-inst {
-  background-image: url(../image/instagram.svg);
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+  fill: #afb1b8;
 }
 
-.icon-twit {
-  background-image: url(../image/twitter.svg);
-}
-
-.icon-fb {
-  background-image: url(../image/facebook.svg);
-}
-
-.icon-link {
-  background-image: url(../image/linkedin.svg);
+.icon-instagram:hover,
+.icon-twitter:hover,
+.icon-facebook:hover,
+.icon-linkedin:hover {
+  fill: var(--title-text-color);
 }
 
 .icon-netw:hover,
@@ -483,9 +467,22 @@ h3 {
   align-items: center;
 }
 
-.customer a:hover,
-.customer a:focus {
-  color: var(--accent-color);
+.item-logo1,
+.item-logo2,
+.item-logo3,
+.item-logo4,
+.item-logo5,
+.item-logo6 {
+  fill: #afb1b8;
+}
+
+.item-logo1:hover,
+.item-logo2:hover,
+.item-logo3:hover,
+.item-logo4:hover,
+.item-logo5:hover,
+.item-logo6:hover {
+  fill: var(--accent-color);
 }
 
 /* -----------стилизация блока Футер---------------- */
@@ -552,25 +549,16 @@ h3 {
   border-radius: 50%;
 }
 
-.footer .icon-inst {
-  background-image: url(../image/instwhite.svg);
-}
-
-.footer .icon-twit {
-  background-image: url(../image/twitwhite.svg);
-}
-
-.footer .icon-fb {
-  background-image: url(../image/fbwhite.svg);
-}
-
-.footer .icon-link {
-  background-image: url(../image/linkedinwhite.svg);
-}
-
 .footer .icon-netw:hover,
 .footer .icon-netw:focus {
   background-color: var(--accent-color);
+}
+
+.footer .icon-instagram,
+.footer .icon-twitter,
+.footer .icon-facebook,
+.footer .icon-linkedin {
+  fill: var(--title-text-color);
 }
 
 .footer-box {
@@ -673,6 +661,9 @@ h3 {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.gallery-item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
