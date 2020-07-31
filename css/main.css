@@ -32,8 +32,6 @@ h3 {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid red;
 }
 
 /* --общий стиль для секций */
@@ -407,24 +405,13 @@ h3 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-}
-.icon-instagram,
-.icon-twitter,
-.icon-facebook,
-.icon-linkedin {
   fill: #afb1b8;
-}
-
-.icon-instagram:hover,
-.icon-twitter:hover,
-.icon-facebook:hover,
-.icon-linkedin:hover {
-  fill: var(--title-text-color);
 }
 
 .icon-netw:hover,
 .icon-netw:focus {
   background-color: var(--accent-color);
+  fill: var(--title-text-color);
 }
 
 /* ----------стилизация блока Постоянные клиенты---------- */
@@ -445,43 +432,27 @@ h3 {
 
 .customer .item {
   display: flex;
-  width: calc((100% - 5 * 30px) / 6);
   height: 90px;
   margin-right: 30px;
-  justify-content: center;
-  text-align: center;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-}
-
-.customer .item:hover {
-  border: 1px solid #2196f3;
 }
 
 .customer .item:nth-child(6n) {
   margin-right: 0px;
 }
 
-.customer a {
+.item-logo {
   display: flex;
+  width: 170px;
+  justify-content: center;
   align-items: center;
-}
-
-.item-logo1,
-.item-logo2,
-.item-logo3,
-.item-logo4,
-.item-logo5,
-.item-logo6 {
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
   fill: #afb1b8;
 }
 
-.item-logo1:hover,
-.item-logo2:hover,
-.item-logo3:hover,
-.item-logo4:hover,
-.item-logo5:hover,
-.item-logo6:hover {
+.item-logo:hover {
+  border: 1px solid #2196f3;
   fill: var(--accent-color);
 }
 
