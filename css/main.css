@@ -246,7 +246,7 @@ h3 {
   margin-right: 0px;
 }
 
-.feature-list .item {
+.feature-list .item::before {
   display: block;
   content: "";
   height: 120px;
@@ -258,19 +258,19 @@ h3 {
   border-radius: 4px;
 }
 
-.item-antenna {
+.item-antenna::before {
   background-image: url(../image/antenna.svg);
 }
 
-.item-clock {
+.item-clock::before {
   background-image: url(../image/clock.svg);
 }
 
-.item-diagram {
+.item-diagram::before {
   background-image: url(../image/diagram.svg);
 }
 
-.item-astronaut {
+.item-astronaut::before {
   background-image: url(../image/astronaut.svg);
 }
 
